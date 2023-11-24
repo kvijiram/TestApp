@@ -1,0 +1,6 @@
+def connect_words(words, max_length) connected_string = words.join('-') if connected_string.length > max_length puts "Error: Connected string exceeds maxLength" else puts connected_string endend# Example usagewords = ['apple', 'banana', 'cherry']max_length = 15connect_words(words, max_length)
+def CountWords(sentence, wordtocount)  words = sentence.downcase.split(" ")  word = wordtocount.downcase  count = words.count(word)  puts "sentence - #{sentence} has #{wordtocount}, #{count} times"  fullword = sentence.gsub(" ","-")  puts "fullword #{fullword}"end
+def TestPrint(max)for n in 1..max do      if (n%3==0 && n%5==0)        puts "#{n} is divisible by 3 & 5"      elsif (n%3==0)        puts "#{n} is divisible only by 3"      elsif (n%5==0)        puts "#{n} is divisible only by 5"      elsif        puts "#{n} is not divisible by 3 & 5"      end  endend
+TestPrint(20)CountWords("basketball BASKETBALL BasketBall","basketball")
+
+
